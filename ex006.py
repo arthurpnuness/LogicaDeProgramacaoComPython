@@ -1,6 +1,6 @@
 
 ## Instrução ao usuário 
-print('Este código calcula a média e apovação de notas de um aluno!')
+print('Este código calcula a média e aprovação de notas de um aluno!')
 
 ## Interação com o usuário
 nome = input('Digite seu nome: ')

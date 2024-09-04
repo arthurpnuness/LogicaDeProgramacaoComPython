@@ -8,6 +8,6 @@ year = int(input('Digite o seu ano de nascimento: '))
 
 ## Estruturas Condicionais e exibição do resultado
 if year <= 2006:
-    print('{} voce ja pode votar!'.format(name))
+    print('{}, voce ja pode votar!'.format(name))
 else:
-    print('{} voce nao pode votar!'.format(name))
+    print('{}, voce nao pode votar!'.format(name))
