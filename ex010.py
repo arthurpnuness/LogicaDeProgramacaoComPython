@@ -1,12 +1,13 @@
-'''Verificação de Login e Senha:
-Escreva um programa que solicite o login e a senha do usuário. Se o
-login for "admin" e a senha for "password", exiba "Acesso liberado",
-caso contrário, exiba "Acesso negado".'''
+## instrução ao usuário
+print('Vamos ver se voce tem acesso ao nosso programa empresarial, siga os passos')
 
+## Interação com o usuário 
 login = input('Digite seu login: ')
-password = float(input('Digite sua senha: '))
+password = input('Digite sua senha: ')
 
-if login == 'admin':
-    print('Acesso liberado')
-elif password == 'password':
+## Estruturas Condicionais e exibição do resultado
+if login == 'admin' and password == 'password':
+    print('Acesso Liberado!')
+else:
+    print('Acesso Negado')
     
