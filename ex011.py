@@ -1,9 +1,4 @@
-'''11. Calcular Desconto em Compras:
-Faça um programa que leia a quantidade de um produto adquirida e o
-preço unitário. Calcule o valor total e o desconto aplicável:
-2% se a quantidade for até 5.
-3% se a quantidade estiver entre 6 e 10.
-5% se a quantidade for maior que 10.'''
+
 
 ## Este código diz para o usuario o valor a pagar com desconto
 print('Vamos ver quanto de desconto voce vai conseguir nas suas compras')
@@ -25,3 +20,5 @@ elif qtdProduto >=6 and qtdProduto <= 10:
 else:
     desconto3 = (qtdProduto * 10) * 0.05
     valorComDesconto = valorTotal - preco
+    print('O valor a pagar com desconto é de R${}'.format(valorComDesconto))
+

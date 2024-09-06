@@ -1,35 +1,28 @@
-'''12. Adivinhação de Número:
-Crie um jogo onde o usuário deve adivinhar um número aleatório entre
-0 e 50. O programa deve informar se o palpite é muito alto ou baixo e
-contar o número de tentativas. Informe o jogador se ele quebrou o
-recorde de tentativas.'''
 
 
-def maior(num):
-    if num > 30:
-        return 'Esta perto! O numero correto é menor'
-    else:
-        return 'Voltando para voce descobrir o numero...'
-
-
-def menor(num):
-        if num < 30:
-            return 'Está perto! O numero correto é maior '
-        else:
-            return 'Voltando para descobrir o numero...'
-    
-
-def opcaoCorreta(num):
-    if num == 30:
-        print('Voce acertou Parabens o numero correto é {}'.format)
-
+# Inicializa as variáveis de contagem de tentativas e o limite máximo
+num = 30
 tentativas = 0
+maxTentativas = 5
 
-while True:
-    num = int(input('Digite um numero entre 0 e 50: '))
+# Inicia o jogo
+print('Bem-vindo ao jogo de adivinhação! Tente adivinhar o número entre 0 e 50.')
+print('Você tem {} tentativas.'.format(maxTentativas))
+
+# Loop de tentativas, condições e resultado
+while tentativas < maxTentativas:
+
+    palpite = int(input("Digite seu palpite: "))
     tentativas += 1
 
+    if palpite == num:
+     print('Parabens voce venceu o jogo com incriveis {} tentativa(s)'.format(tentativas))
+     break
+    elif palpite > num:
+     print('O papite foi muito alto!')
+    else:
+     print('O palpite foi muito baixo:')
 
-
-
-
+ # Verifica se atingiu o número máximo de tentativas
+    if tentativas == maxTentativas:
+        print('Você atingiu o número máximo de {} tentativas. O número secreto era {}.'.format(maxTentativas, num))
